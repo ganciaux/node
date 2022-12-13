@@ -3,7 +3,7 @@ const PORT = 3000;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send({ enpoint: ["/hello"] });
+  res.send({ enpoint: ["/", "/hello"] });
 });
 
 app.get("/hello", (req, res) => {
